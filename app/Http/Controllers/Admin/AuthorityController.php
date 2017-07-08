@@ -1,21 +1,14 @@
 <?php
-
 namespace App\Http\Controllers\Admin;
-
 use Illuminate\Http\Request;
 use Auth;
 use App\Events\UserLogin;
 use App\Events\UserLogout;
-
-
 /**
  * 后台管理员用户登录统一认证
- *
- * @author raoyc <raoyc2009@gmail.com>
  */
 class AuthorityController extends BackController
 {
-
     /**
      * 添加路由过滤中间件
      */

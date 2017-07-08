@@ -8,8 +8,6 @@ use Douyasi\Documentation\MarkdownDocumentation;
  * Class MarkdownController
  *
  * markdown 文档解析控制器
- *
- * @author raoyc <raoyc2009@gmail.com>
  */
 
 class MarkdownController extends Controller

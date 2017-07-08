@@ -21,6 +21,7 @@
 | kernel and includes session state, CSRF protection, and more.
 |
 */
+
 Route::get('/', function () {
     return url('/');
 });

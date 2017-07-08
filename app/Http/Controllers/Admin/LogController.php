@@ -1,16 +1,11 @@
 <?php
-
 namespace App\Http\Controllers\Admin;
-
 use App\Http\Requests\MeRequest;
 use Illuminate\Http\Request;
 use App\Repositories\SystemRepository;
 use Gate;
-
 /**
  * 系统日志控制器
- *
- * @author raoyc <raoyc2009@gmail.com>
  */
 class LogController extends BackController
 {

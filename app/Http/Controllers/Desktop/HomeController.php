@@ -1,5 +1,6 @@
 <?php
 
+
 namespace App\Http\Controllers\Desktop;
 
 use Illuminate\Http\Request;
@@ -25,7 +26,7 @@ class HomeController extends FrontController
     /**
      * 博客文章
      */
-    public function getArticle($cslug, $slug)
+   public function getArticle($cslug, $slug)
     {
         $category = Category::where('slug', '=', $cslug)->first();
         if ($category) {
@@ -62,7 +63,7 @@ class HomeController extends FrontController
     /**
      * YASCMF landing page
      */
-    public function getLandingPage()
+  public function getLandingPage()
     {
         return view('admin.auth.login');
     }

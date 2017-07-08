@@ -1,7 +1,5 @@
 <?php
-
 namespace App\Http\Controllers\Admin;
-
 use Illuminate\Http\Request;
 use App\Http\Requests\UserRequest;
 use App\Http\Controllers\Controller;
@@ -9,15 +7,11 @@ use App\Loggers\SystemLogger;
 use App\Repositories\UserRepository;
 use App\Repositories\RoleRepository;
 use Gate;
-
 /**
  * 管理员(用户)资源控制器
- *
- * @author raoyc <raoyc2009@gmail.com>
  */
 class UserController extends BackController
 {
-
     /**
      * The RoleRepository instance.
      *

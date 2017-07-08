@@ -1,16 +1,11 @@
 <?php
-
 namespace App\Http\Controllers\Admin;
-
 use App\Http\Requests\MeRequest;
 use Illuminate\Http\Request;
 use App\Repositories\UserRepository;
 use Gate;
-
 /**
  * 我的账户控制器
- *
- * @author raoyc <raoyc2009@gmail.com>
  */
 class MeController extends BackController
 {

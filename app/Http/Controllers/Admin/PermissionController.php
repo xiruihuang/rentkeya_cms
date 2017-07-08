@@ -1,19 +1,13 @@
 <?php
-
 namespace App\Http\Controllers\Admin;
-
 use Illuminate\Http\Request;
 use App\Repositories\RoleRepository;
 use Gate;
-
 /**
  * 权限控制器
- *
- * @author raoyc <raoyc2009@gmail.com>
  */
 class PermissionController extends BackController
 {
-
     /**
      * The RoleRepository instance.
      *

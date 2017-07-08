@@ -1,19 +1,11 @@
 <?php
-
 namespace App\Http\Controllers\Admin;
-
 use Illuminate\Http\Request;
-
 use Douyasi\Http\Requests\CategoryRequest;
 use Douyasi\Models\Category;
 use Gate;
-
-
 /**
  * 分类控制器
- * 无关核心业务逻辑，直连模型操作
- *
- * @author raoyc <raoyc2009@gmail.com>
  */
 class CategoryController extends BackController
 {
