@@ -35,7 +35,7 @@
         @show{{-- 主体内容 --}}
 
         <div class="footer">
-            <a href="/"><h1>请尽快完成tasks</h1></a>
+            <a href="/"><h1>请尽快完成所有tasks</h1></a>
         </div>
 
     </div>

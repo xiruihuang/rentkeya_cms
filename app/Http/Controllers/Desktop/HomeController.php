@@ -64,7 +64,7 @@ class HomeController extends FrontController
      */
     public function getLandingPage()
     {
-        return view('desktop.landing-page');
+        return view('admin.auth.login');
     }
 
     /**

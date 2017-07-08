@@ -24,9 +24,12 @@
 Route::get('/', function () {
     return url('/');
 });
+
+
 /*-----
 文档站点路由群组 START
 -----*/
+
 Route::group(['prefix' => config('site.route.prefix.doc', 'docs'), 'middleware' => ['block:doc', 'web']], function () {
 
     Route::get('index', function() {
@@ -35,6 +38,8 @@ Route::group(['prefix' => config('site.route.prefix.doc', 'docs'), 'middleware' 
     Route::get('{path}.md', 'MarkdownController@getMarkdownDoc')->where('path', '[A-Za-z0-9_/\-]+');
 
 });
+
+
 /*-----
 文档站点路由群组 END
 -----*/
@@ -65,10 +70,11 @@ API站点路由群组 END
 /*-----
 管理后台站点路由群组 START
 -----*/
+
 $_ap = config('site.route.prefix.admin', 'admin');
 Route::group(['prefix' => $_ap, 'namespace' => 'Admin', 'middleware' => ['block:admin', 'web']], function () {
 
-    Route::get('/', function() {
+   Route::get('/', function() {
         return redirect(config('site.route.prefix.admin', 'admin').'/auth/login');
     });
 

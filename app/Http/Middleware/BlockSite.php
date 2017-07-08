@@ -32,13 +32,13 @@ class BlockSite
         $site_host = ltrim(config('site.route.domain.'.$site), 'http:');
         $site_host = ltrim($site_host, 'https:');
         $site_host = rtrim($site_host, '/');
-        try {
+        /*try {
             if($host !== $site_host) {
                 throw new Exception('403 site blocked !');
             }
         } catch (Exception $e) {
             return abort(403, $e->getMessage());
-        }
+        }*/
         return $next($request);
 
     }
